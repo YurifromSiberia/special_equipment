@@ -1,5 +1,5 @@
  
-//  @import '../../node_modules/slick-carousel/slick/slick';
+
 
 @import'vars';
 @import'global';
@@ -7,5 +7,41 @@
 
 
 
-
+.header {
+    margin-top: 25px;
+}
+ 
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 101px;
+}
+.header_logo {
+    
+    
+}
+.header__menu {
+   
+}
+.header__btn {
+}
+.home {
+} 
+.latte {
+}
+.icone {
+}
+.menu ul,li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  margin-right: 37px;
+}
+.menu__list {
+}
+.header__infohome {
+}
+.header__infohome-emale {
+}
  
