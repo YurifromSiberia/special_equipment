@@ -8,40 +8,68 @@
 
 
 .header {
-    margin-top: 25px;
 }
  
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 101px;
 }
-.header_logo {
-    
-    
-}
-.header__menu {
-   
-}
+
 .header__btn {
+    background-color: green;
 }
 .home {
-} 
+}
 .latte {
 }
 .icone {
 }
-.menu ul,li {
+ 
+.header__menu {
+   margin-right: 70px;
+ 
+}
+
+.menu a {
+    font-size: 12px;
+    color: #3d3d3d;
+ 
+    span{
+        color: #cf3232;
+    }
+}
+.menu__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  margin-right: 37px;
 }
-.menu__list {
+  
+.menu__list li{
+    border-right: 1px solid #cccece;
+    padding: 4px 20px;
+}
+
+.menu__list li:last-child {
+     border-right:0px;
+    }
+.menu__list li+li {
+ 
+  
+  
 }
 .header__infohome {
+    p {
+        font-size: 12px;
+        color: #a0a0a0;
+    }
+  
 }
-.header__infohome-emale {
+.header__infohome-emale  span  {
+    color: #cf3232;
 }
- 
+.phone{
+    font-size: 18px;
+    color: #cf3232;
+    font-weight: 700;
+   }
