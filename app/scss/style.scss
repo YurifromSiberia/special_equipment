@@ -8,31 +8,62 @@
 
 
 .header {
+    margin-bottom: 35px;
+
 }
  
+
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__btn {
-    background-color: green;
-}
-.home {
-}
-.latte {
-}
-.icone {
-}
+
  
 .header__menu {
    margin-right: 70px;
+   position: relative;
+   &::before{
+    content: '\f015';
+    position: absolute;
+    font-family: 'icomoon' ;
+    font-size: 16px;
+bottom: 40px;
+right: 215px;
+cursor: pointer; 
+}
  
 }
+ 
+.header__menu{
+    position: relative;
+    &::after{
+        content: '\f003';
+        position: absolute;
+        font-family: 'icomoon' ;
+        font-size: 16px;
+    bottom: 40px;
+    right: 180px;
+    cursor: pointer;
+}
+    
+}
 
+.menu{
+    position: relative;
+    &::before{
+        content: '\f0e8';
+        position: absolute;
+        font-family: 'icomoon' ;
+        font-size: 16px;
+    bottom: 40px;
+    right: 150px;}
+    cursor: pointer;
+    
+}
 .menu a {
-    font-size: 12px;
+    
     color: #3d3d3d;
  
     span{
@@ -43,26 +74,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
 }
   
 .menu__list li{
     border-right: 1px solid #cccece;
-    padding: 4px 20px;
+    padding: 4px 17px;
 }
 
 .menu__list li:last-child {
      border-right:0px;
     }
-.menu__list li+li {
- 
-  
-  
-}
+
 .header__infohome {
     p {
-        font-size: 12px;
+        
         color: #a0a0a0;
     }
+    position: relative;
+
   
 }
 .header__infohome-emale  span  {
@@ -73,3 +106,294 @@
     color: #cf3232;
     font-weight: 700;
    }
+// start brands
+
+
+   .brands {
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+ 
+ 
+  .brands__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+.brands__inner-box {
+    max-height: 100px;
+ 
+}
+ 
+.brands_text {
+    text-align: center;
+}
+
+.brands__item img {
+     display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.brands__item {
+ position: relative;
+    
+}
+
+.brands__item-text{
+    position: absolute;
+    top: 88%;
+    transform: translateY(-50%);
+    min-width: 104px;
+}
+
+// and brands
+
+.buttons {
+    margin-bottom: 20px;
+}
+ 
+.buttons__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.buttons__btn {
+    border-radius: 5px;
+    background: rgb(156,22,45);
+    background: linear-gradient(276deg, rgba(156,22,45,1) 0%, rgba(219,7,15,0.8463760504201681) 100%, rgba(252,69,113,1) 100%);
+    min-width: 230px;
+    height: 62px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ 
+ .slider{
+    margin-bottom: 60px;
+ }
+.slider__item {
+    background-image: url(../img/slider-bg.jpg);
+    min-height: 193px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.slider__item-titel {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    margin-left: 50px;
+  padding-top: 80px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -36px;
+}
+
+ 
+.slick-dots button{
+   
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    outline: none;
+    
+}
+
+.slick-active button{
+    background-color: #cf3232;
+}
+
+.slick-dots ul, li {
+  
+    z-index: 5;
+    margin-left: 7px;
+    margin-right: 7px;}
+
+
+.content {
+    margin-bottom: 30px;
+}
+ 
+.content__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.content__news {
+    min-width: 200px;
+    margin-right: 50px;
+}
+.content__news-box {
+   border-bottom: 1px dotted #373737;
+    span{
+font-size: 10px;
+color: #8b1919;
+
+display: block;
+ 
+    }
+
+    p{
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    a{
+        margin-bottom: 20px;
+        color: #8b1919;
+        font-size: 11px;
+       text-decoration: underline;
+    }
+ 
+}
+
+  .content__news-box.box__mini span{
+    padding-top: 18px;
+    
+  }
+.content__title {
+    font-size: 14px;
+    color: #373737;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+}
+.news {
+}
+.content__news-link {
+}
+ 
+.content__description a {
+    color: #8b1919;
+    font-size: 11px;
+   text-decoration: underline;
+}
+
+.content__description ul{
+      padding-left:8px;
+}
+
+.markers li::marker {
+	color: #8b1919;
+	font-size: 14px;
+   
+}
+
+.logotip{
+    margin-bottom: 25px;
+
+}
+
+.logotip__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f7f7;
+   
+}
+ 
+ 
+  
+  
+.footer {
+   
+}
+ 
+.footer__content {
+    
+}
+
+.footer__content span{
+    color: #8b1919;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.footer__col {
+    padding-right: 35px;
+    
+   
+ 
+}
+.footer__col-titel {
+    font-size: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 8px;
+    &::after{
+        content: '';
+        position: absolute;
+        right: -37px;
+        width: 1px;
+        height: 137px;
+        background-color: #858585;
+    }
+}
+
+
+.footer__col-list   {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  a{
+    margin-bottom: 10px;
+  }
+    
+}
+
+.footer__col.list__min{
+    max-width: 125px;
+   
+}
+.footer__logo {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #5d5d5d;
+    margin-bottom: 20px;
+    
+}
+.header_logo{
+    max-width: 300px;
+}
+.footer_logo-img {
+    margin-bottom: 15px;
+}
+.footer_logo-text {
+}
+.footer__logo-contact {
+    margin-top: 45px;
+}
+.footer__logo-phonts {
+    font-size: 18px;
+}
+.footer__logo-btn {
+    margin-top: 35px;
+ 
+   
+}
+
+.footer__logo-btn{
+    width: 92px;
+    height: 30px;
+}
